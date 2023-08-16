@@ -1,0 +1,63 @@
+
+<div>
+    <button class="btn btn-primary mr-3"(click)="value='5'">set value 5</button>
+    <button class="btn btn-primary mr-3"(click)="value='10'">set value 10</button>
+    <button class="btn btn-primary mr-3"(click)="value='20'">set value 20</button>
+
+</div> 
+
+
+  <div [ngSwitch]="value">
+    <p class="alert alert info mb-3" *ngSwitchCase="5">the value is 5</p>
+    <p class="alert alert info mb-3" *ngSwitchCase="10">the value is 10</p>
+    <p class="alert alert info mb-3" *ngSwitchCase="20">the value is 20</p>
+    <p class="alert alert info mb-3" *ngSwitchDefault=""> price value is not set yet</p>
+
+</div> 
+
+<hr>
+
+<ul class="nav nav-pills mb-4">
+    <li class="nav-items actives">
+        <a href="javascript:;" class="nav-link"
+        (click)="price='5'"
+        [class.active]="price==='5'">set value 5</a>
+    </li>
+    <li class="nav-items">
+        <a href="javascript:;" class="nav-link"
+        (click)="price='10'"
+        [class.active]="price==='10'">set value 10</a>
+        
+    </li>
+    <li class="nav-items">
+        
+        <a href="javascript:;" class="nav-link"
+        (click)="price='20'"
+        [class.active]="price==='20'">set value 20</a>
+    </li>
+</ul>
+
+    <div class="tab-body"  [ngSwitch]="price">
+        <div class="card">
+            <div class="card-body" *ngSwitchCase="5">
+              <strong  >the value is 5</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore?
+                
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-body" *ngSwitchCase="10">
+              <strong>the value is 10 </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore?
+                
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-body" *ngSwitchCase="20">
+            <strong>the value is 20</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore?   
+                
+            </div>
+        </div>
+        
+    </div>
+

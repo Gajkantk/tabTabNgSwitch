@@ -1,0 +1,136 @@
+<!-- <p>tab works!</p>
+ <ul class="nav nav-pills">
+    <li class="nav-items ">
+        <a href="javascript:;" data-id="angular" class="nav-link"
+        (click)="onTabClick($event)"
+        [ngClass]="{
+            active:  frameWorkName == 'angular'
+        }">Angular</a>
+    </li>
+    <li class="nav-items">
+        <a href="javascript:;" data-id="react" class="nav-link"
+        (click)="onTabClick($event)"
+        [ngClass]="{
+            active: frameWorkName === 'react'
+        }">React</a>
+    </li>
+    <li class="nav-items">
+        <a href="javascript:;"data-id="bootstrap"  class="nav-link"
+        (click)="onTabClick($event)"
+        [ngClass]="{
+            active:  frameWorkName === 'bootstrap'
+        }">Bootstrap</a>
+    </li>
+</ul>
+
+<hr>
+
+<div class="tab-body">
+    <div class="card">
+        <div class="card-body" *ngIf="frameWorkName ==='angular'">
+            <strong>Angular</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quisquam, officia cupiditate molestiae ratione voluptas corporis, nisi sapiente tenetur itaque maiores a temporibus laboriosam!
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body" *ngIf="frameWorkName ==='react'">
+            <strong>Rect</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quisquam, officia cupiditate molestiae ratione voluptas corporis, nisi sapiente tenetur itaque maiores a temporibus laboriosam!
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body" *ngIf="frameWorkName ==='bootstrap'">
+            <strong>Bootstrap</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quisquam, officia cupiditate molestiae ratione voluptas corporis, nisi sapiente tenetur itaque maiores a temporibus laboriosam!
+        </div>
+    </div>
+</div>  -->
+ 
+
+<ul class="nav nav-pills mb-4">
+    <li class="nav-items active">
+        <a href="javascript:;"   class="nav-link "
+        (click)="frameWorkName ='angular'"
+        [ngClass]="{
+            active:frameWorkName === 'angular'
+        }">Angular</a>
+    </li>
+    <li class="nav-items">
+        <a href="javascript:;"  class="nav-link"
+        (click)="frameWorkName ='react'"
+        [ngClass]="{
+            active:frameWorkName === 'react'
+        }">React</a>
+    </li>
+    <li class="nav-items">
+        <a href="javascript:;"  class="nav-link"
+        (click)="frameWorkName ='bootstrap'"
+        [ngClass]="{
+            active:frameWorkName === 'bootstrap'
+        }">Bootstrap</a>
+    </li>
+</ul>
+
+<hr>
+
+<div class="tab-body">
+    <div class="card ">
+        <div class="card-body" *ngIf="frameWorkName ==='angular'">
+            <strong>Angular</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quisquam, officia cupiditate molestiae ratione voluptas corporis, nisi sapiente tenetur itaque maiores a temporibus laboriosam!
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body" *ngIf="frameWorkName ==='react'">
+            <strong>React</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quisquam, officia cupiditate molestiae ratione voluptas corporis, nisi sapiente tenetur itaque maiores a temporibus laboriosam!
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body" *ngIf="frameWorkName ==='bootstrap'">
+            <strong>Bootstrap</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quisquam, officia cupiditate molestiae ratione voluptas corporis, nisi sapiente tenetur itaque maiores a temporibus laboriosam!
+        </div>
+    </div>
+</div>  
+
+
+<ul class="nav nav-pills mb-4">
+    <li class="nav nav-items active">
+        <a href="javascript:;" class="nav-link"
+        (click)=" skillName='javascript'"
+        [ngClass]="{
+           active: skillName==='javascript'
+        }">Javascript</a>
+    </li>
+    <li class="nav nav-items">
+        <a href="javascript:;" class="nav-link"
+        (click)=" skillName='bootstrap'"
+        [ngClass]="{
+            active:  skillName==='bootstrap'
+          }"  >Bootstrap</a>
+    </li>
+    <li class="nav nav-items">
+        <a href="javascript:;" class="nav-link"
+        (click)="  skillName='typescript'"
+        [ngClass]="{
+            active:  skillName==='typescript'
+          }" >Typescript</a>
+    </li>
+</ul>
+
+<div class="tab-body">
+    <div class="card">
+        <div class="card-body"*ngIf="skillName==='javascript'">
+            <strong>Javascript</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ratione cum soluta assumenda molestiae illum harum dicta cumque. Quos debitis rem blanditiis placeat sed molestias illo amet provident odit doloribus!
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body" *ngIf="skillName==='bootstrap'">
+            <strong>Bootstrap</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ratione cum soluta assumenda molestiae illum harum dicta cumque. Quos debitis rem blanditiis placeat sed molestias illo amet provident odit doloribus!
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-body" *ngIf="skillName==='typescript'">
+            <strong>Typescript</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ratione cum soluta assumenda molestiae illum harum dicta cumque. Quos debitis rem blanditiis placeat sed molestias illo amet provident odit doloribus!
+        </div>
+    </div>
+</div>
